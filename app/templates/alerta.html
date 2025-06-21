@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="text-center">
+    <h2 class="text-danger">🚨 Alerta Enviado!</h2>
+    <p>O alerta foi registrado com sucesso em {{ alerta.data }}.</p>
+    <p>Nosso sistema notificou os contatos de emergência e a rede de apoio.</p>
+    <a href="/" class="btn btn-primary">Voltar ao Início</a>
+</div>
+{% endblock %}

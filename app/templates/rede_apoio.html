@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Locais da Rede de Apoio</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Telefone</th>
+            <th>Tipo</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for rede in redes %}
+        <tr>
+            <td>{{ rede.nome }}</td>
+            <td>{{ rede.endereco }}</td>
+            <td>{{ rede.telefone }}</td>
+            <td>{{ rede.tipo }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
